@@ -18,6 +18,7 @@ const PostList = ({ posts }: PostsProps) => {
           tabIndex={0}
           href={`/post/${post.id}`}
           aria-label="View post details"
+          autoFocus
         >
           {post.title}
         </TransitionLink>
