@@ -1,5 +1,11 @@
 @import "@/styles/base";
 
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .backLink {
   composes: link;
   position: absolute;

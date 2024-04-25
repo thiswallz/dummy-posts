@@ -4,12 +4,18 @@
   max-width: 600px;
   box-shadow: 0px 0px 0px 2px var(--color-white);
   border-radius: 10px;
+  font-size: 1rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.2rem;
+  }
 }
 
 .tags {
   list-style: none;
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .chip {
@@ -20,7 +26,13 @@
 }
 
 .description {
-  font-size: 1.2rem;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 25px;
+
+  @media screen and (min-width: 768px) {
+    line-height: 35px;
+  }
 }
 
 .content {

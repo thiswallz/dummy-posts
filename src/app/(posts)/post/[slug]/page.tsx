@@ -9,7 +9,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const post = await getPost(slug);
 
   return (
-    <main>
+    <section className={styles.container}>
       <TransitionLink
         aria-label="Go back to posts"
         href="/"
@@ -19,6 +19,6 @@ export default async function Post({ params }: { params: { slug: string } }) {
         Back
       </TransitionLink>
       <PostCard post={post} />
-    </main>
+    </section>
   );
 }
