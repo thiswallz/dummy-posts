@@ -1,0 +1,14 @@
+@import "@/styles/base";
+
+.list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.item {
+  composes: link;
+}
