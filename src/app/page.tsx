@@ -1,5 +1,5 @@
 import styles from "./page.module.scss";
-import Posts from "@/components/PostList/PostList";
+import PostList from "@/components/PostList/PostList";
 import { getPosts } from "./actions";
 
 export default async function Home() {
@@ -8,7 +8,7 @@ export default async function Home() {
   return (
     <main className={styles.main}>
       <h1>Dummy Posts</h1>
-      <Posts posts={posts} />
+      <PostList posts={posts} />
     </main>
   );
 }

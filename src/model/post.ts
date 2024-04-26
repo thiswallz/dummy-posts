@@ -6,3 +6,5 @@ export interface Post {
   tags: string[];
   reactions: number;
 }
+
+export type CachePost = Record<number, Post>;
